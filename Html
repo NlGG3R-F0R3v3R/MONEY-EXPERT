@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoneyExpert AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>💰 MoneyExpert AI</h1>
+
+<div class="container">
+
+    <label>Enter Amount:</label>
+    <input type="number" id="amount" placeholder="Enter money amount">
+
+    <label>Select Currency:</label>
+    <select id="currency">
+        <!-- A–Z currencies -->
+        <option value="USD">USD - US Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="GBP">GBP - British Pound</option>
+        <option value="JPY">JPY - Japanese Yen</option>
+        <option value="AUD">AUD - Australian Dollar</option>
+        <option value="CAD">CAD - Canadian Dollar</option>
+        <option value="CHF">CHF - Swiss Franc</option>
+        <option value="CNY">CNY - Chinese Yuan</option>
+        <option value="INR">INR - Indian Rupee</option>
+        <option value="ZAR">ZAR - South African Rand</option>
+    </select>
+
+    <label>Ask a Money Question:</label>
+    <textarea id="question" placeholder="How should I save my money?"></textarea>
+
+    <button onclick="askAI()">Ask MoneyExpert</button>
+
+    <div id="response"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
